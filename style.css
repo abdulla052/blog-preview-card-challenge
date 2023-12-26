@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Outfit&family=Roboto&display=swap');
+
+body {
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Figtree', sans-serif;
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 19.5rem;
+    background-color: var(--White);
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 7px 8px 0px black;
+}
+
+.card:hover {
+    transform: scale(0.98);
+}
+
+.card-img {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-type p {
+    background-color: var(--Yellow);
+    display: inline-block;
+    padding: 5px 13px;
+    margin: 15px 0;
+    font-weight: 800;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    color: var(--Black);
+}
+
+.publishing {
+    font-size: 0.8rem;
+    margin: 0;
+    font-weight: 600;
+    color: var(--Black);
+}
+
+.title {
+    color: var(--Black);
+    margin: 15px 0;
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.description {
+    color: var(--Grey);
+    margin: 0 0 15px;
+    line-height: 1.3rem;
+}
+
+.publisher-container {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    cursor: pointer;
+}
+
+.publisher-container img {
+    height: 2rem;
+}
